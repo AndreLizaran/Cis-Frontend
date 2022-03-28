@@ -1,17 +1,22 @@
+// Modules
 import React from 'react';
+import AboutUs from '../components/AboutUs';
 
 // Components
-import LandingVideo from '../components/LandingVideo'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
 import NextEvent from '../components/NextEvent';
+import LandingVideo from '../components/LandingVideo'
+import TitleContainer from '../components/shared/TitleContainer';
 
 export default function index() {
   return (
-    <div className='flex flex-col'>
-      <Navbar/>
-      <div style={{ height:140 }}/>
-      <LandingVideo/>
-      <NextEvent/>
-    </div>
+    <>
+      <TitleContainer title='Bienvenido a la comunidad'>
+        <Navbar/>
+        <LandingVideo/>
+        <NextEvent/>
+        <AboutUs/>
+      </TitleContainer>
+    </>
   )
 }

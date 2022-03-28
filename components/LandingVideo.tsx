@@ -2,17 +2,16 @@
 import React from 'react';
 
 // Components
-import Button from './shared/Button';
+import { DarkButton } from './shared/Button';
 
 export default function LandingVideo() {
   return (
-    <div className='flex p-10 bg-slate-400 align-center'>
+    <div className='flex flex-col lg:flex-row p-10 bg-slate-400'>
       <img 
-        className='rounded drop-shadow-2xl w-6/12'   
+        className='rounded-t lg:rounded-l lg:rounded-t-none drop-shadow-2xl w-full lg:w-6/12'   
         src='./img/landingVideo.png'
-        style={{ zIndex:2 }}
       />
-      <div className='w-full bg-white p-6 self-center justify-center items-center rounded flex flex-col text-center' style={{ zIndex:1, height:320 }}>
+      <div className='w-full lg:w-6/12 bg-white p-6 justify-center items-center rounded-b lg:rounded-r lg:rounded-l-none flex flex-col text-center drop-shadow-2xl'>
         <h2 
           className='text-gray-800 font-bold w-full uppercase'
           style={{ fontSize:38 }}
@@ -21,11 +20,9 @@ export default function LandingVideo() {
           className='text-gray-800 mb-3'
           style={{ fontSize:20 }}
         >Una comunidad de estudiantes para estudiantes</h3>
-        <Button 
-          type='button' 
+        <DarkButton 
           onClick={() => {}}
-          color='dark-blue'
-        >Descubre</Button>
+        >Descubre</DarkButton>
       </div>
     </div>
   )

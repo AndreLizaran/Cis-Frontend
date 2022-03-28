@@ -1,4 +1,5 @@
-import React from 'react'
+// Modules
+import React from 'react';
 
 export default function Timer() {
   return (

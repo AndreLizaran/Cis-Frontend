@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Menu() {
   return (
-    <ul className='flex justify-around mt-5'>
+    <ul className='hidden md:flex justify-around mt-5 text-center'>
       {menuItems.map((item, key) => (
-        <li className='text-white py-2 w-full text-center hover:bg-gray-700 rounded cursor-pointer' key={key}>{item.text}</li>
+        <li className='text-white py-2 w-full hover:bg-gray-700 rounded cursor-pointer' key={key}>{item.text}</li>
       ))}
     </ul>
   )
